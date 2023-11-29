@@ -15,7 +15,7 @@
         <img id="astronaut" src="./assets/astronaut.jpg" alt="Imagem de um astronauta com um universo atrás">
         <h1>Explore sem limites</h1>
         <p>Porque o aprendizado é contínuo</p>
-        <img id="arrow" src="./assets/arrow.svg" alt="seta apontando para baixo">
+        <a href="#planets"><img id="arrow" src="./assets/arrow.svg" alt="seta apontando para baixo"></a>
     </div>
 
     
@@ -39,31 +39,36 @@
 
 
     <div id="endForm">
+        <div id="contact">
         <h1>Entre em contato</h1>
         <form>
-            <fieldset>
-                <div class="input-wrapper">
-                    <label for="name">Seu nome</label>
-                    <input type="text" id="name" placeholder="Seu nome">
-                </div>
+                <fieldset>
+                    <div class="input-wrapper">
+                        <label for="name">Seu nome</label>
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
 
-                <div class="input-wrapper">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email">
-                </div>
+                    <div class="input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
 
-                <div class="input-wrapper">
-                    <label for="message">Digite sua mensagem aqui...</label>
-                    <input type="text" id="message" placeholder="Digite sua mensagem aqui...">
-                </div>
-               
-                <button>Enviar Mensagem</button>
+                    <div>
+                        <textarea name="messages" id="messages"  rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+                    </div>
+              
+                    <button>Enviar Mensagem</button>
 
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
+        </div>
+    
+
+        <div>
+            <img id="stars" src="./assets/stars.png" alt="estrelas de quatro pontas, na cor rosa">
+        </div>
 
     </div>
-
 
     <footer>
         <p>© 2023 - Rocketseat Explorer</p>
