@@ -33,6 +33,12 @@ body {
     height: 70rem;
 }
 
+#boxTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #astronaut {
     height: 37rem;
     width: 36.4rem;
@@ -186,26 +192,39 @@ footer p {
     #frontPage{
         display: grid;
         grid-template-areas: 
-        "A A B B"
-        "C C B B"
-        "D E B B";
+        "A B";
+        height: 69rem;
+        justify-content: space-between;
+        align-content: space-between;
+    }
 
-        height: 83rem;
+    #boxOne {
+        grid-area: B;
+    }
+
+    #boxTwo {
+        grid-area: A;
+        align-items: start;
+        margin-left: 7rem;
+        margin-top: auto;
+        
+    }
+
+    #boxTwo h1 {
+        font-size: 6rem;
+    }
+
+    #boxTwo p {
+        font-size: 3.2rem;
+        margin-bottom: 15rem;
     }
 
     #astronaut {
-        grid-area: B;
-        width: 72rem;
-        height: 73.2rem;
+        width: 62rem;
+        height: 63.2rem;
+        margin-right: 7rem;
     }
 
-    #frontPage h1, p {
-        grid-area: C;
-    }
-
-    #frontPage a {
-        grid-area: D;
-    }
 
     #planets{
         display: flex;
@@ -233,9 +252,25 @@ footer p {
     justify-content: space-between;
 }
 
+#endForm h1 {
+    font-size: 4.2rem;
+}
+
+.input-wrapper {
+    width: 52rem;
+}
+
 #contact {
-    margin-left: 30rem;
+    margin-left: 10rem;
  
+}
+
+#name {
+    background-position: 2% 50%;
+}
+
+#email {
+    background-position: 2% 50%;
 }
 
 #stars {
